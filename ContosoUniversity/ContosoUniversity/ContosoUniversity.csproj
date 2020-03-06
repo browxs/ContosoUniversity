@@ -145,13 +145,28 @@
     </Compile>
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Logger.cs" />
-    <Compile Include="Migrations\202003061709496_InitialCreate.cs" />
-    <Compile Include="Migrations\202003061709496_InitialCreate.designer.cs">
-      <DependentUpon>202003061709496_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202003061824039_InitialCreate.cs" />
+    <Compile Include="Migrations\202003061824039_InitialCreate.designer.cs">
+      <DependentUpon>202003061824039_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003061833199_MaxLengthOnNames.cs" />
+    <Compile Include="Migrations\202003061833199_MaxLengthOnNames.designer.cs">
+      <DependentUpon>202003061833199_MaxLengthOnNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003061835247_ColumnFirstName.cs" />
+    <Compile Include="Migrations\202003061835247_ColumnFirstName.designer.cs">
+      <DependentUpon>202003061835247_ColumnFirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003061950374_ComplexDataModel.cs" />
+    <Compile Include="Migrations\202003061950374_ComplexDataModel.designer.cs">
+      <DependentUpon>202003061950374_ComplexDataModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
+    <Compile Include="Models\Instructor.cs" />
+    <Compile Include="Models\OfficeAssignment.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\EnrollmentDateGroup.cs" />
@@ -168,6 +183,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="libman.json" />
     <None Include="Properties\PublishProfiles\brwcontoso - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -217,8 +233,17 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202003061709496_InitialCreate.resx">
-      <DependentUpon>202003061709496_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202003061824039_InitialCreate.resx">
+      <DependentUpon>202003061824039_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003061833199_MaxLengthOnNames.resx">
+      <DependentUpon>202003061833199_MaxLengthOnNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003061835247_ColumnFirstName.resx">
+      <DependentUpon>202003061835247_ColumnFirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003061950374_ComplexDataModel.resx">
+      <DependentUpon>202003061950374_ComplexDataModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -40,7 +40,6 @@
                         LastName = c.String(),
                         FirstMidName = c.String(),
                         EnrollmentDate = c.DateTime(nullable: false),
-                        Secret = c.String(),
                     })
                 .PrimaryKey(t => t.ID);
             
